@@ -2,15 +2,15 @@
 
 <html lang="en">
     <head>
-        <!-- this line linked in the styles.css stylesheet-->
-        <link href="styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <title>Santiago's CV</title>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                let button = document.querySelector('.abc');
+                let button = document.querySelector('.submit');
                 button.addEventListener('click', function(event) {
                     event.preventDefault();
                     document.querySelector('.response').innerHTML = 'Thank you. I\'ll be in touch shortly.';
@@ -19,7 +19,7 @@
         </script>
     </head>
     <body>
-        <div align="center">
+        <div class="container-xxl" align="center" style="padding:5px;">
             <table>
                 <tr>
                     <td>
@@ -60,34 +60,68 @@
 
                         <h5>Get In Touch</h5>
                         <p>You can send me an email using the form below, or you can reach me on <a href="https://www.linkedin.com/in/santiago-vs/" target="_blank">LinkedIn</a>.</p>
-                        <div class="mb-3">
 
-                            <form>
-                            <label for="fname">First name:</label><br>
-                            <input type="text" class="fname" name="fname" placeholder="John"><br>
-                            <label for="lname">Last name:</label><br>
-                            <input type="text" class="lname" name="lname" placeholder="Smith"><br>
-                            <label for="exampleFormControlInput1" class="form-label">Email address:</label><br>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message:</label><br>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insert message here"></textarea><br>
-                            <input type="submit" value="Submit" class="abc">
-                            <br><p class="response"></p>
-                        </form>
+                        <!-- experimental-->
+                        <div class="container-sm">
+                            <form class="p-4 p-md-5 rounded-0" action="/contact" method="post" style="border-style: none;">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" name="fullname" id="fullname" placeholder="" maxlength="100" required>
+                                    <label for="fname">Full Name</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" maxlength="100" required>
+                                    <label for="phone">Phone Number <!--<small class="text-body-secondary">&#40;eg. 0412345678 or 0296123456&#41;</small>--></label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" maxlength="100" required>
+                                    <label for="email">Email Address</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" name="turnaround" id="turnaround" aria-label="Floating label select example" required>
+                                        <option value="" disabled selected>- Select -&nbsp;</option>
+                                        <option value="Freelance">Freelance opportunity</option>
+                                        <option value="Job">Job opportunity - full time or fixed term contract</option>
+                                        <option value="Networking">Networking - you would like to connect or collaborate</option>
+                                        <option value="Other">Other - please provide details below</option>
+                                    </select>
+                                    <label for="turnaround">What can I help you with?</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" placeholder="How can we help?" name="enquiry" id="enquiry" style="height: 140px" maxlength="1000" required></textarea>
+                                    <label for="floatingTextarea2">Message</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <button class="w-100 btn btn-lg btn-secondary custom-btn" id="submit" type="submit">Submit</button>
+                                <strong>
+                                    <p class="response text-body-primary" id="secondary response"></p>
+                                </strong>
+                                <hr class="my-4" style="color: white !important;">
+                                <small class="text-body-secondary" style="color: white !important;">We'll aim to get back to you on the same day, but may take 1-2 business days.</small>
+                            </form>
+
                         </div>
                     </td>
                 </tr>
             </table>
 
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
     <footer align="right" valign="bottom">
-        <p>
-            <br>
-            By: Santiago Vazquez
-        </p>
+        <div class="container-xxl">
+            <p>
+                <br>
+                By: Santiago Vazquez
+            </p>
+        </div>
       </footer>
 </html>
