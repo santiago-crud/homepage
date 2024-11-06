@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: #F9F6EE;
+    font-family: "Menlo", cursive;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Press Start 2P", cursive;
+}
+table {
+    width: 100%;
+    border: 2px dotted #F9F6EE;
+}
+th, td {
+
+    border: 1px dotted #F9F6EE;
+  }
+
+.link {
+    text-align: center;
+
+}
+
+.mb-3 {
+    align: center;
+    text-align: center;
+    color: auto;
+}
+
+.form-control, .fname, .lname {
+    width: 60%;
+    color: grey;
+}
+a {
+    color: white
+}
+/* Menlo, Monaco, 'Courier New', monospace */

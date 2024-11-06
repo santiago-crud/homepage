@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- this line linked in the styles.css stylesheet-->
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Santiago's CV</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let button = document.querySelector('.abc');
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    document.querySelector('.response').innerHTML = 'Thank you. I\'ll be in touch shortly.';
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div align="center">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Santiago Vazquez</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Software Developer &amp;
+                            Salesforce Marketing
+                            Cloud Consultant</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><strong><a href="index.html"> &gt;&gt; HOME &lt;&lt;</a></strong></td>
+                </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="link">
+                            <strong><a href="education.html">EDUCATION</a></strong>
+                        </td>
+                        <td class="link">
+                            <strong>&nbsp;<a href="experience.html">EXPERIENCE</a></strong>
+                        </td>
+                        <td class="link">
+                            <strong>&nbsp;<a href="projects.html">PROJECTS</a></strong>
+                        </td>
+                        <td class="link">
+                            <strong>&nbsp;<a href="contact.html">GET IN TOUCH</a></strong>
+                        </td>
+
+                    </tr>
+                </table>
+                <table>
+                <tr>
+                    <td class="mb-3">
+
+                        <h5>Get In Touch</h5>
+                        <p>You can send me an email using the form below, or you can reach me on <a href="https://www.linkedin.com/in/santiago-vs/" target="_blank">LinkedIn</a>.</p>
+                        <div class="mb-3">
+
+                            <form>
+                            <label for="fname">First name:</label><br>
+                            <input type="text" class="fname" name="fname" placeholder="John"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" class="lname" name="lname" placeholder="Smith"><br>
+                            <label for="exampleFormControlInput1" class="form-label">Email address:</label><br>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message:</label><br>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insert message here"></textarea><br>
+                            <input type="submit" value="Submit" class="abc">
+                            <br><p class="response"></p>
+                        </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </body>
+    <footer align="right" valign="bottom">
+        <p>
+            <br>
+            By: Santiago Vazquez
+        </p>
+      </footer>
+</html>
