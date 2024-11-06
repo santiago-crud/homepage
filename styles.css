@@ -1,36 +1,51 @@
 body {
-    background-color: black;
-    color: #F9F6EE;
-    font-family: "Menlo", cursive;
+    background-color: black !important;
+    color: #F9F6EE !important;
+    font-family: "Menlo", cursive !important;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Press Start 2P", cursive;
+    font-family: "Press Start 2P", cursive !important;
 }
+
+hr {
+    margin: 1rem 0 !important;
+    color: inherit !important;
+    border: 0 !important;
+    border-top: 1px solid !important;
+    opacity: 0.6 !important;
+}
+
 table {
-    width: 100%;
-    border: 2px dotted #F9F6EE;
+    width: 100% !important;
+    border: 2px dotted #F9F6EE; !important
 }
 th, td {
 
-    border: 1px dotted #F9F6EE;
+    border: 1px dotted #F9F6EE !important;
+    padding: 10px !important;
   }
 
 .link {
-    text-align: center;
+    text-align: center !important;
 
 }
 
 .mb-3 {
-    align: center;
-    text-align: center;
-    color: auto;
+    align: center !important;
+    text-align: center !important;
+    color: auto !important;
 }
 
-.form-control, .fname, .lname {
-    width: 60%;
-    color: grey;
+.form-control2, .fname, .lname {
+    width: 60% !important;
+    color: grey !important;
+    margin: auto !important;
 }
 a {
-    color: white
+    color: white !important;
+}
+
+label {
+    color: black;
 }
 /* Menlo, Monaco, 'Courier New', monospace */
