@@ -31,9 +31,58 @@
 
                 <table style="text-align: left; border: 2px dotted #F9F6EE !important;">
                 <tr>
-                    <td>
-                        <h5>Projects</h5>
-                        <p>INSERT PROJECT DETAILS</p>
+                    <td class="mb-1">
+
+                        <h5>Get In Touch</h5>
+                        <p>You can send me an email using the form below, or you can reach me on <a href="https://www.linkedin.com/in/santiago-vs/" target="_blank">LinkedIn</a>.</p>
+                        <!-- experimental-->
+                        <div class="container-sm">
+                            <form class="pt-1 pb-2 px-4 rounded-0" action="/contact" method="post" style="border-style: none;">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" name="fullname" id="fullname" placeholder="" maxlength="100" required>
+                                    <label for="fname">Full Name</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" maxlength="100" required>
+                                    <label for="phone">Phone Number <!--<small class="text-body-secondary">&#40;eg. 0412345678 or 0296123456&#41;</small>--></label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" maxlength="100" required>
+                                    <label for="email">Email Address</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" name="turnaround" id="turnaround" aria-label="Floating label select example" required>
+                                        <option value="" disabled selected>- Select -&nbsp;</option>
+                                        <option value="Freelance">Freelance opportunity</option>
+                                        <option value="Job">Job opportunity - full time or fixed term contract</option>
+                                        <option value="Networking">Networking - you would like to connect or collaborate</option>
+                                        <option value="Other">Other - please provide details below</option>
+                                    </select>
+                                    <label for="turnaround">What can I help you with?</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" placeholder="How can we help?" name="enquiry" id="enquiry" style="height: 140px" maxlength="1000" required></textarea>
+                                    <label for="floatingTextarea2">Message</label>
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                    </div>
+                                </div>
+                                <button class="w-100 btn btn-lg btn-outline-light custom-btn" id="submit" type="submit">Submit</button>
+                                <strong>
+                                    <p class="response text-body-primary" id="secondary response"></p>
+                                </strong>
+                                <hr class="my-4" style="color: white !important;">
+                                <small class="text-body-secondary" style="color: white !important;">I'll aim to get back to you on the same day, but may take 1-2 business days.</small>
+                            </form>
+
+                        </div>
                     </td>
                 </tr>
             </table>
