@@ -104,6 +104,7 @@ p a {
         font-size: 1.0rem !important;
         color: #9f9f9f;
         justify-content: right;
+        text-align: right;
     }
     .details {
         display: flex;
@@ -116,6 +117,8 @@ p a {
     .location {
         font-size: 1.0rem;
         color: #9f9f9f;
+        justify-content: right;
+        text-align: right;
     }
     .summary {
         margin-left: 20px;
