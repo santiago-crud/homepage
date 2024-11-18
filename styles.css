@@ -69,3 +69,38 @@ label {
 }
 
 /* Menlo, Monaco, 'Courier New', monospace */
+
+
+
+    .cv-entry {
+        margin-bottom: 20px;
+        
+    }
+    .role {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .timeframe {
+        font-size: 1.0rem !important;
+        color: #9f9f9f;
+        justify-content: right;
+    }
+    .details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .company {
+        font-weight: bold;
+    }
+    .location {
+        font-size: 1.0rem;
+        color: #9f9f9f;
+    }
+    .summary {
+        margin-left: 20px;
+    }
+    .summary li {
+        margin-bottom: 5px;
+    }

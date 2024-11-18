@@ -32,8 +32,31 @@
                 <table style="text-align: left; border-top: 0px !important; border-left: 2px dotted #F9F6EE !important; border-right: 2px dotted #F9F6EE !important; border-bottom: 2px dotted #F9F6EE !important;">
                 <tr>
                     <td>
-                        <h5>Projects</h5>
-                        <p>INSERT PROJECT DETAILS</p>
+                        <h4 style="padding-bottom:10px;"><u>Projects</u></h4>
+                        <!-- <p>INSERT PROJECT DETAILS</p> -->
+                        <!-- entry 1 -->
+                        <div class="cv-entry">
+                            <h5 class="role">
+                                Ducks Lawn Care
+                                <a href="https://duckslawncare.pythonanywhere.com/" target="_blank" style="text-decoration: none;"><span class="timeframe">https://duckslawncare.pythonanywhere.com/</span></a>
+                            </h5>
+                            <ul class="summary">
+                                <li>Built a full-stack web application for a small business to receive, manage and track enquiries for contract work.</li>
+                                <li>The Contact Us form triggers an email to the business owner via a Flask route. It is sent with Flask-Mail using
+                                    Gmail as the email client and includes the enquiries details.</li>
+                                <li>APScheduler is used to send a daily email summarising how many enquiries were received for the day, and how
+                                    urgent they are, providing a helpful summary for the business owner.</li>
+                                <li>CSS Bootstrap is used for mobile optmisation. On a mobile browser, the site’s modules will collapse into a single
+                                    column, ensuring optimal visibility and user experience.</li>
+                                <li>The Staff view has an integrated pagination system. Enquiries can be marked as ‘Contacted ’ which uses
+                                    JavaScript to update the status on the front-end and trigger a Flask route to update the status on the database.</li>
+                                <li>Enquiries with a ‘Not Contacted ’ status show their age in ‘Days and Hours’, to give the business owner a clear idea
+                                    how long a customer has been waiting.</li>
+                                <li>Auto Dark Mode is supported and triggers based on device settings.</li>
+                            </ul>
+                            <p>&nbsp;</p>
+                        </div>
+                        <!-- end of entry -->
                     </td>
                 </tr>
             </table>
