@@ -33,6 +33,7 @@ th, td {
 
 .link {
     text-align: center !important;
+    /* text-decoration: underline; */ 
 }
 
 .mb-1, .mb-2, .mb-3 {
@@ -48,6 +49,11 @@ th, td {
 
 .title a {
     color: white;
+}
+
+.home strong {
+    color: white;
+    text-decoration: underline;
 }
 
 .inactive {
