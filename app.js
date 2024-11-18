@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add event listener for mouseover (hover start)
         tab.addEventListener('mouseover', () => {
             console.log(tab.style.backgroundColor);
-            tab.style.backgroundColor = 'white'; // New background color
+            tab.style.backgroundColor = '#e0e0e0'; // New background color
             const link = tab.querySelector('a');
             if (link) {
                 link.style.color = 'black'; // New font color

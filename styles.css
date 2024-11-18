@@ -50,20 +50,22 @@ th, td {
     color: white;
 }
 
-.tab a {
-    color: white;
-}
-
 .inactive {
     background-color: #292929;
+    color: white;
 }
 
 .active {
     background-color: white;
+    color: black;
 }
 
 label {
     color: black;
+}
+
+p a {
+    color: white;
 }
 
 .custom-btn {
