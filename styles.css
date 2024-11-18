@@ -46,8 +46,12 @@ th, td {
     margin: auto !important;
 }
 
-a {
-    color: white !important;
+.title a {
+    color: white;
+}
+
+.tab a {
+    color: white;
 }
 
 label {
