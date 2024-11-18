@@ -54,6 +54,14 @@ th, td {
     color: white;
 }
 
+.inactive {
+    background-color: #292929;
+}
+
+.active {
+    background-color: white;
+}
+
 label {
     color: black;
 }
